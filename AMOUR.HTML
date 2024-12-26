@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Amour - Site de Rencontres</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://via.placeholder.com/1920x1080/FF0000/FFFFFF?text=C%C5%93urs+rouges') repeat;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(255, 0, 0, 0.8);
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .form-container {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .form-container input {
+            font-size: 1em;
+        }
+
+        .form-container button {
+            background-color: #FF0000;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #cc0000;
+        }
+
+        footer {
+            background-color: rgba(255, 0, 0, 0.8);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Requêtes médias pour la réactivité */
+        @media screen and (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .form-container {
+                max-width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>L'Amour</h1>
+        <p>Trouvez l'amour de votre vie ici ❤️</p>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Inscription</h2>
+            <form action="principal_apres_connection.html" method="get">
+                <label for="name">Votre nom complet</label>
+                <input type="text" id="name" placeholder="Votre nom complet" required>
+
+                <label for="email">Votre email</label>
+                <input type="email" id="email" placeholder="Votre email" required>
+
+                <label for="password">Votre mot de passe</label>
+                <input type="password" id="password" placeholder="Votre mot de passe" required minlength="3">
+                <a href="principal apres connection .html"><button type="submit">S'inscrire</button></a>
+                
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 L'Amour. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

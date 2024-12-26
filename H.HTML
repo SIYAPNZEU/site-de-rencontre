@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUSE BET CM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            animation: fadeIn 1s ease-in-out;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00509e;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffbb33;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Match Cards */
+        .match-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .match-card:hover {
+            transform: translateY(-10px);
+        }
+        .match-info {
+            flex: 2;
+        }
+        .bet-options {
+            flex: 1;
+            text-align: center;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideIn {
+            0% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .match-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .bet-options {
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Pictures/DALL·E 2024-12-26 17.18.31 - A futuristic blue dune buggy designed as a logo. Instead of flames, it emits streams of glowing money, resembling green and gold bills, in a dynamic a.webp" alt="Logo de FUSE BET CM">
+        <h1>FUSE BET CM</h1>
+    </header>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">DIRECT</a>
+        <a href="#">Mes Paris</a>
+        <a href="#">Profil</a>
+        <a href="#">SOLDE</a>
+    </nav>
+    <main>
+        <h2>Matchs disponibles</h2>
+        <div class="match-card">
+            <div class="match-info">
+                <p><strong>Southampton vs West Ham</strong></p>
+                <p>Date : 26 Décembre 2024 à 13h30</p>
+            </div>
+            <div class="bet-options">
+                <button>Parier sur Southampton</button>
+                <button>Parier sur West Ham</button>
+            </div>
+        </div>
+        <div class="match-card">
+            <div class="match-info">
+                <p><strong>Bournemouth vs Crystal Palace</strong></p>
+                <p>Date : 26 Décembre 2024 à 16h00</p>
+            </div>
+            <div class="bet-options">
+                <button>Parier sur Bournemouth</button>
+                <button>Parier sur Crystal Palace</button>
+            </div>
+        </div>
+        <div class="match-card">
+            <div class="match-info">
+                <p><strong>Nottingham Forest vs Tottenham</strong></p>
+                <p>Date : 26 Décembre 2024 à 16h00</p>
+            </div>
+            <div class="bet-options">
+                <button>Parier sur Nottingham Forest</button>
+                <button>Parier sur Tottenham</button>
+            </div>
+        </div>
+        <div class="match-card">
+            <div class="match-info">>
+                        <p><strong>Nottingham Forest vs Tottenham</strong></p>
+                        <p>Date : 26 Décembre 2024 à 16h00</p>
+                    </div>
+                    <div class="bet-options">
+                        <button>Parier sur Nottingham Forest</button>
+                        <button>Parier sur Tottenham</button>
+                    </div>
+                </div>
+                <div class="match-card">
+                    <div class="match-info">
+                        <p><strong>Liverpool vs Manchester United</strong></p>
+                        <p>Date : 26 Décembre 2024 à 18h30</p>
+                    </div>
+                    <div class="bet-options">
+                        <button>Parier sur Liverpool</button>
+                        <button>Parier sur Manchester United</button>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>&copy; 2024 FUSE BET CM. Tous droits réservés.</p>
+            </footer>
+        </body>
+        </html>
+        
+ 
